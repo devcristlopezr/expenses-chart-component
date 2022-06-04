@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: rgb(118, 181, 188);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+  --padding: 20px;
+  --medium-font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 340px;
+}
+
+.my-balance {
+  width: 100%;
+  background-color: var(--soft-red);
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  border-radius: 10px;
+}
+
+.my-balance .my-balance-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.my-balance .my-balance-info span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.my-balance img {
+  width: 60px;
+}
+
+.spending {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  margin-top: 45px;
+  color: var(--medium-brown);
+  margin-bottom: 20px;
+}
+
+.days div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.day-bar {
+  background-color: var(--soft-red);
+  width: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.amount {
+  text-align: center;
+  background-color: var(--dark-brown);
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: 45px;
+  height: 30px;
+}
+
+.days .hide {
+  opacity: 0;
+}
+
+.spending-total {
+  border-top: solid 2px hsla(0, 0%, 50%, 0.2);
+  padding: var(--padding) 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-month {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.money {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.last-month {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+
+.medium-font-size {
+  font-size: var(--medium-font-size);
+  color: var(--medium-brown);
+}
+
+.percentage {
+  text-align: end;
+  font-weight: 700;
+}
+
+.active {
+  background-color: var(--cyan);
+}
